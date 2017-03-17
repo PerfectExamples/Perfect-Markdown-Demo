@@ -70,7 +70,7 @@ let confData = [
 	"servers": [
 		[
 			"name":"localhost",
-			"port":18181,
+			"port":8080,
 			"routes":[
         ["method":"get", "uri":"/", "handler":RootHandler, "allowResponseFilters":true],
 				["method":"get", "uri":"/demo", "handler":TableDemoHandler, "allowResponseFilters":true],
