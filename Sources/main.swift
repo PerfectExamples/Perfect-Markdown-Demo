@@ -46,7 +46,7 @@ func MarkdownHandler(data: [String:Any]) throws -> HTTPResponseFilter {
       func filterHeaders(response: HTTPResponse, callback: (HTTPResponseFilterResult) -> ()) {
 
         // get the content
-        let markdown = response.bodyBytes.withUnsafeBufferPointer { ptr -> String in String(cString: ptr.baseAddress!) }
+        let markdown = String(cString: response.bodyBytes)
 
         // convert markdown to html
         let html = markdown.markdownToHTML ?? "Markdown to HTML Failed"
@@ -92,4 +92,3 @@ do {
 } catch {
 	fatalError("\(error)") // fatal error launching one of the servers
 }
-
