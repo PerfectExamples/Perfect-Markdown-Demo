@@ -1,0 +1,19 @@
+<html>
+	<head><title>Perfect Online Markdown Editor</title>
+		<meta http-equiv='Content-Type' content='text/html;charset=utf-8'>
+	</head>
+	<body>
+		<H1>Perfect Markdown Online Editor</H1>
+		<p><textarea id=textInput cols=60 rows=20 onkeyup='send()'></textarea></p>
+		<p id=results></p>
+	</body>
+<script>
+function send() {
+	var inp = document.getElementById('textInput').value
+	var oup = document.getElementById('results')
+	fetch('http://' + window.location.host + '/api', {method: 'post', body: inp})
+	.then( (resp) => { return resp.text() })
+	.then( (text) => { oup.innerHTML = text } )
+}
+</script>
+</html>

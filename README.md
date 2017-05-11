@@ -45,17 +45,17 @@ This repository demonstrates how to render markdown content in a Perfect Templat
 
 ## Compatibility with Swift
 
-The master branch of this project currently compiles with **Xcode 8.2** or the **Swift 3.0.2** toolchain on Ubuntu.
+The master branch of this project currently compiles with **Xcode 8.3** or the **Swift 3.1** toolchain on Ubuntu.
 
 ## Building & Running
 
 The following will clone and build a markdown http project and launch the server on port 8080.
 
 ```
-git clone https://github.com/PerfectExamples/Perfect-Markdown-Demo.git
-cd Perfect-Markdown-Demo
-swift build
-.build/debug/PerfectTemplate
+$ git clone https://github.com/PerfectExamples/Perfect-Markdown-Demo.git
+$ cd Perfect-Markdown-Demo
+$ swift build
+$ .build/debug/MarkdownDemo
 ```
 
 You should see the following output:
