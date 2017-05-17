@@ -1,4 +1,4 @@
-# Perfect Markdown Demo 
+# Perfect Markdown Demo [English](https://github.com/PerfectlySoft/PerfectTemplate)
 
 <p align="center">
     <a href="http://perfect.org/get-involved.html" target="_blank">
@@ -46,17 +46,17 @@ Perfect Markdown 服务器示例
 
 ## Swift 兼容性说明
 
-本项目目前使用 **Xcode 8.3** 或者 **Swift 3.1** 工具链编译，可以在Ubuntu上使用。
+本项目目前使用 **Xcode 8.2** 或者 **Swift 3.0.2** 工具链编译，可以在Ubuntu上使用。
 
 ## 编译运行
 
 运行以下命令可以运行本示例程序并在8080端口创建服务器：
 
 ```
-$ git clone https://github.com/PerfectExamples/Perfect-Markdown-Demo.git
-$ cd Perfect-Markdown-Demo
-$ swift build
-$ .build/debug/MarkdownDemo
+git clone https://github.com/PerfectExamples/Perfect-Markdown-Demo.git
+cd Perfect-Markdown-Demo
+swift build
+.build/debug/PerfectTemplate
 ```
 
 应该能够看到以下输出：
